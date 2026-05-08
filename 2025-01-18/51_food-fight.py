@@ -10,3 +10,4 @@ def solution(food):
     final_arrangement = arrangement + "0" + arrangement[::-1]
     
     return final_arrangement  # Return the final arrangement as a string
+
