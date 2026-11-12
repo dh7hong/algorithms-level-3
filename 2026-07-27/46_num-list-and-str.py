@@ -11,9 +11,10 @@ def solution(s):
     
     return int(s)  # Convert the final string to an integer and return
 
+print(solution("one4seveneight"))  # 1478
 
-student_scores = {"Alice": 85, "Bob": 92, "Charlie": 78}
+# student_scores = {"Alice": 85, "Bob": 92, "Charlie": 78}
 
-for name, score in student_scores.items():
-    print(f"{name} scored {score} points.")
+# for name, score in student_scores.items():
+#     print(f"{name} scored {score} points.")
     

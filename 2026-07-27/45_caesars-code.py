@@ -18,3 +18,4 @@ def solution(s, n):
 
     return result  # Return the final encrypted string
 
+print(solution("AB", 1))  # BC

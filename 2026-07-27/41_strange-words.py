@@ -1,5 +1,4 @@
 
-s = "try hello world"
 
 # fruits = ["apple", "banana", "cherry"]
 # for idx, fruit in enumerate(fruits):
@@ -29,21 +28,28 @@ def solution(s):
     for word in words:
         new_word = ""
         for i, char in enumerate(word):
+            print(f'i: {i}, char: {char}')
             if i % 2 == 0:
                 new_word += char.upper()
+                
             else:
                 new_word += char.lower()
+                
         answer.append(new_word)
+        print(f'new_word: {new_word}')
     return " ".join(answer)
+
+s = "try hello world"
 
 print(solution(s))
 
-s2 = "try hello world"
 
-def solution_2(s2):
-    return " ".join(["".join([c.upper() if i % 2 == 0 else c.lower() for i, c in enumerate(w)]) for w in s.split(" ")])
+# s2 = "try hello world"
 
-print(solution_2(s2))
+# def solution_2(s2):
+#     return " ".join(["".join([c.upper() if i % 2 == 0 else c.lower() for i, c in enumerate(w)]) for w in s.split(" ")])
+
+# print(solution_2(s2))
 
 """
 step 1: Split the string s2 into words
